@@ -41,8 +41,21 @@ let z = add(10)
 console.log(z)*/
 
 
-function cal_age(year){
-    return(2023-year)
-}
+// function cal_age(year){
+//     return(2023-year)
+// }
  
-console.log(x = cal_age(1947))
+// console.log(x = cal_age(1947))
+
+
+function wish(){
+    console.log("Good Morning")
+}
+wish()
+
+function wish(){
+console.log("good Night")
+}
+wish()
+
+//function overriding
