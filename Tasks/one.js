@@ -1,3 +1,3 @@
-function changeimage(){
-  document.getElementById("vamsi").src="D:\Nani\Wallpapers\dj-headphones-by-mikael-kristenson-wallpaper.jpg"
+function changeImage(){
+  document.getElementById("vamsi").src="./"
 }
