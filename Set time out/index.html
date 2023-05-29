@@ -1,0 +1,19 @@
+<html>
+
+<head>
+    <title>Digital Clock</title>
+</head>
+
+<body>
+    <h3>Digital Clock - HTML,JS and Bootstrap</h3>
+    <p id="Nani"></p>
+</body>
+<script>
+    setInterval(() => {
+        let ct = new Date().toLocaleTimeString();
+        document.getElementById('Nani').innerHTML = ct
+    }, 1000)
+    
+</script>
+
+</html>
