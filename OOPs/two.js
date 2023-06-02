@@ -1,9 +1,12 @@
-class Parent{
-    Amount ='100cr'
+class Account {
+    min_Bal = 500
+    open_Account() {
+        console.log("account opened successfully")
+    }
 }
-class child extends Parent{
-}
-let c1=new child()
-let c2=new child()
-console.log(c1.Amount)
-console.log(c2.Amount)
+
+let a1 = new Account()
+let a2 = new Account()
+
+console.log(a1)
+console.log(a2)
