@@ -2,13 +2,16 @@ let employees=[{id:101,name:"Nani",Loc:"Hyd"},
               {id:102,name:"Virat",Loc:"Mumbai"},
               {id:103,name:"Pallavi",Loc:"Kerala"}]
         
-let createEmployees=(employee,callback)=>{
+let createEmployees=(employee)=>{
+          return new Promise((resolve,reject)=>{
           setTimeout(() => {
+            let flag = true;
+            flag ? resolve("Data Inserted") : reject("Not Inserted")
             employees.push(employee)
-            callback()
-          }, 4000);
+        
+          }, 4000)
+        })
 }
-
 let getEmployees = () => {
     setTimeout(() => {
         let rows = ""
@@ -19,11 +22,17 @@ let getEmployees = () => {
               <td>${emp.Loc}</td>            
             </tr>`
         }
-        document.getElementById('xyz').innerHTML = rows
+        document.getElementById('abc').innerHTML = rows
     }, 1000)
 }
 
-createEmployees({ id: 104, name: "Vamsi", Loc: "Guntur" },getEmployees)
+createEmployees({ id: 104, name: "Vamsi", Loc: "Guntur" })
+        .then((msg) => {
+        console.log(msg)
+        getEmployees()
+        })
+        .catch((err) => {
+          console.log(err)
+        })
 
-// getEmployees()
              
