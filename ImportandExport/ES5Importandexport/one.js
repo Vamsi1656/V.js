@@ -3,5 +3,5 @@ let emp={
     name:"Nani",
     sal:45000
 }
-let{id,name}=emp;
-module.exports={id,name}
+let{id,name,sal}=emp;
+module.exports={id,name,sal}
