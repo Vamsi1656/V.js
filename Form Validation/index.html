@@ -1,0 +1,32 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <p id="Nani"></p>
+        <form>
+            <label>Enter name</label>
+            <input type="text">
+            <label>Password</label>
+            <input type="password">
+            <input type="submit" value="register" onsubmit="return formvalidation( )">
+        </form>
+    </body>
+    <script>
+        function formvalidation(){
+            let name=document.getElementById('Nani').name.value;
+            let password=document.getElementById('Nani').password.value;
+
+            if(name==null || name==""){
+              alert("Name is Mandatory");
+              return false;
+           }
+           else if(password.length>6){
+            alert("Password must contain letters");
+            return false;
+           }
+           
+           }
+        
+    </script>
+</html>
