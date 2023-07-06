@@ -1,0 +1,22 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <p id="demo"></p>
+        <input type="submit" value="Try" onclick="demo()">
+    </body>
+       <script>
+       function demo(){
+        let text
+            let person=prompt("Enter the name:", "Vamsi")
+            if(person==null || person==" "){
+                text= "user cancelled the prompt" 
+            }else{
+                text= "Hello" + person + "Good Morning"
+            }
+            document.getElementById('demo').innerHTML=text
+       }
+       
+       </script>
+</html>

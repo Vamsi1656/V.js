@@ -1,0 +1,23 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <p id="demo"></p>
+        <input type="submit" value="Try" onclick="getdata()">
+    </body>
+       <script>
+        function getdata(){
+               var txt;
+            if(confirm("Press a button!")){
+                txt= "You pressed ok button!"
+            }
+            else{
+                txt="You pressed cancel!"
+            }
+            document.getElementById('demo').innerHTML=txt
+        }
+         
+       
+       </script>
+</html>
