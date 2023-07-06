@@ -6,16 +6,16 @@
         <p id="Nani"></p>
         <form>
             <label>Enter name</label>
-            <input type="text">
+            <input type="text" name="Myname">
             <label>Password</label>
-            <input type="password">
-            <input type="submit" value="register" onsubmit="return formvalidation( )">
+            <input type="password" name="Password">
+            <input type="submit" value="register"  onsubmit=" formvalidation()">
         </form>
     </body>
     <script>
         function formvalidation(){
-            let name=document.getElementById('Nani').name.value;
-            let password=document.getElementById('Nani').password.value;
+            let name=document.getElementById('Nani').value;
+            let password=document.getElementById('Nani').value;
 
             if(name==null || name==""){
               alert("Name is Mandatory");
