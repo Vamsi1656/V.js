@@ -1,0 +1,26 @@
+<html>
+    <head></head>
+    <body>
+        <form name="form">
+            <label>password</label>
+            <input type="password" name="password1">
+            <label>confirm password</label>
+            <input type="password" name="password2">
+            <input type="submit" value="submit" onclick="data()">
+        </form>
+    </body>
+    <script>
+        function data(){
+            var password=document.form.password1.value
+            var confirmpassword=document.form.password2.value
+            if(password==confirmpassword){
+                return true
+            }else{
+                alert("password must be same")
+                return false
+            }
+
+
+        }
+    </script>
+</html>
