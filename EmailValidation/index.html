@@ -1,0 +1,23 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+         <form name="form">
+            <label>email</label>
+            <input type="email" name="email">
+            <input type="submit" onclick="email()">
+         </form>
+    </body>
+    <script>
+        function email(){
+            var x=document.form.email.value
+            var atposition=x.indexOf("@")
+            var dotposition=x.lastIndexOf(".")
+            if(atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length){
+                alert("Plz enter a valid email")
+                return false
+            }   
+        }
+    </script>
+</html>
