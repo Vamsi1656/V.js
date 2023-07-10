@@ -1,9 +1,27 @@
 <html>
     <head></head>
     <body>
-        
+        <p id="Hii"></p>
+        <p id="Hello"></p>
+        <input id="submit" type="submit" value="click">
     </body>
     <script>
-        
-    </script>
+           function fun(){
+             alert("Hii Hello")
+           }
+           function wish(){
+            document.getElementById('Hii').innerHTML="Good afternoon"
+           }
+           function asking(){
+            document.getElementById('Hello').innerHTML="Had lunch"
+           }
+        let input=document.getElementById('submit')
+        input.addEventListener('click',fun)
+        input.addEventListener('click',wish)
+        input.addEventListener('click',asking)
+
+         </script>
 </html>
+
+
+<!-- Add multiple events to the same element -->
