@@ -1,0 +1,16 @@
+<html>
+    <head></head>
+    <body>
+        <p id="add"></p>
+        <input id="submit" type="submit" value="click">
+    </body>
+    <script>
+        document.getElementById('submit').addEventListener('click',listener) 
+        function listener(){
+            document.getElementById('add').innerHTML="Hii,Good Afternoon"
+        }
+    </script>
+</html>
+
+<!-- Add listener:The addEventListener() method is an inbuilt function of JavaScript. 
+    We can add multiple event handlers to a particular element without overwriting the existing event handlers. -->
