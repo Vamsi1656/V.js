@@ -1,0 +1,27 @@
+<html>
+    <head></head>
+    <body>
+        <p id="Hii"></p>
+        <input id="btn" type="submit" value="click">
+    </body>
+    <script>
+        function fun(){
+                 btn.style.background="black"
+                 btn.style.color="blue"
+        }
+        function wish(){
+            document.getElementById('Hii').innerHTML="Good Afternoon"
+        }
+        function asking(){
+            document.getElementById('Hii').innerHTML="Had Lunch?"
+        }
+        function saying(){
+            document.getElementById('Hii').innerHTML="I had my lunch"
+        }
+        let btn=document.getElementById('btn')
+        btn.addEventListener('mouseover',fun)
+        btn.addEventListener('click',wish)
+        btn.addEventListener('mouseout',asking)
+        btn.addEventListener('dblclick',saying)
+    </script>
+</html>

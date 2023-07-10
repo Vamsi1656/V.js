@@ -1,0 +1,18 @@
+<html>
+    <head></head>
+    <body onresize="fun()">
+        <p id="Hii"></p>
+        <p>You have resized the window <span id="s1"> 0 </span> times.</p>
+    </body>
+    <script>
+        var i=0
+
+        function fun(){
+            var res="Width =" + windows.outerWidth + "<br>" + "Height = " + windows.outerHeight
+            document.getElementById('Hii').innerHTML=res
+
+            var res1= i += 1
+            document.getElementById('s1').innerHTML=res1
+        }
+    </script>
+</html
