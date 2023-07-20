@@ -11,3 +11,9 @@ console.log(newprices);
 
 // Map method can create a new array an it returns a value
 
+
+let price=[98,198,298,398,498]
+let newprice=price.map(price => price+2)
+console.log(newprice);
+
+

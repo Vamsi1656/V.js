@@ -13,3 +13,8 @@ return ename;
 console.log(a); // output is undefined
 //Because it can only iterate and cannot return any value,it is undefined
 
+
+let names=["Nani","Virat","Pallavi","Vamsi"]
+names.forEach((names)=>{console.log(names)})
+
+

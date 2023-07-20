@@ -16,3 +16,9 @@ console.log(new_months)
 
 //We can use ... dots for spread operator
 
+let d=["Sun","Mon","Tues"]
+    e=["Wed","Thur","Fri"]
+    f=["Satur"]
+let days=[...d,...e,...f]
+console.log(days)
+
