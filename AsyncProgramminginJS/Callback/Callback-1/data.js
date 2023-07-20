@@ -26,4 +26,7 @@ let getEmployees = () => {
 createEmployees({ id: 104, name: "Vamsi", Loc: "Guntur" },getEmployees)
 
 // getEmployees()
+
+
+// A callback function can be defined as a function passed into another function as a parameter. 
              
