@@ -1,0 +1,22 @@
+<!-- // The JavaScript date object can be used to get year, month and day. 
+// You can display a timer on the webpage by the help of JavaScript date object. -->
+
+<html>
+    <head>
+
+    </head>
+    <body>
+        
+        <p id="date"></p>
+    </body>
+    <script>
+        let date=new Date()
+        let day=date.getDate()
+        let month=date.getMonth()+1
+        let year=date.getFullYear()
+        let x=("Date is: "+day+"/"+month+"/"+year); 
+
+        document.getElementById('date').innerHTML=x
+       
+    </script>
+</html>

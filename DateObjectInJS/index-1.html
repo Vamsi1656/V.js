@@ -1,0 +1,17 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <p id="time"></p>
+    </body>
+    <script>
+        let day=new Date()
+        let h=day.getHours()
+        let m=day.getMinutes()
+        let s=day.getSeconds()
+        let x=(h+":"+m+":"+s)
+document.getElementById('time').innerHTML=x
+
+    </script>
+</html>
