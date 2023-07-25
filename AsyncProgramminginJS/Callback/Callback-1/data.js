@@ -23,7 +23,7 @@ let getEmployees = () => {
     }, 1000)
 }
 
-createEmployees({ id: 104, name: "Vamsi", Loc: "Guntur" },getEmployees)
+createEmployees({ id: 104, name: "Vamsi", Loc: "Guntur",getEmployees })        
 
 // getEmployees()
 
